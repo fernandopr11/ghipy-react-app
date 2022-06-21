@@ -1,19 +1,21 @@
 import "./App.css";
-import { ListsOfGifs } from "./components/ListsOfGifs";
+import { ListsOfGifs } from "./components/ListOfGifs";
 import { Link, Route } from "wouter";
+import { Home } from "./pages/Home";
+import { Detail } from "./pages/Detail";
+import Logo from "./logo.png";
 
 function App() {
   return (
     <div className="App">
       <section className="App-header">
-        <h1>App</h1>
+        <Link to="/">
+          <h4 className="title">Giphy App</h4>
+        </Link>
 
-        <div className="enlaces">
-          <Link to="/gif/panda">Gifs de pandas</Link>
-          <Link to="/gif/mario">Gifs de Mario</Link>
-          <Link to="/gif/rickandmorty">Gifs de Rick and Morty</Link>
-        </div>
-        <Route component={ListsOfGifs} path="/gif/:keyword" />
+        <Route component={Home} path="/" />
+        <Route component={ListsOfGifs} path="/search/:keyword" />
+        <Route component={Detail} path="/gif/:id" />
       </section>
     </div>
   );

@@ -1,5 +1,5 @@
 const getData = async ({ keyword = "batman" }) => {
-  const URL = `https://api.giphy.com/v1/gifs/search?api_key=x2e9mKnmAqDosgqvpGF7uSyBUpz9HbGZ&q=${keyword}&limit=5&offset=0&rating=g&lang=en`;
+  const URL = `https://api.giphy.com/v1/gifs/search?api_key=x2e9mKnmAqDosgqvpGF7uSyBUpz9HbGZ&q=${keyword}&limit=25&offset=0&rating=g&lang=en`;
 
   const response = await fetch(URL);
   const { data = [] } = await response.json();
