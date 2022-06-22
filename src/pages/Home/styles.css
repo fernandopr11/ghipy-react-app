@@ -4,3 +4,21 @@
   justify-content: center;
   align-items: center;
 }
+
+input {
+  padding: 10px;
+  font-size: 30px;
+  border-width: 1px;
+  width: 100%;
+  border-color: #c6c6c6;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  text-align: center;
+  border-radius: 13px;
+  box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+}
+input:focus {
+  outline: none;
+}
