@@ -1,6 +1,6 @@
 import "./App.css";
-import { ListsOfGifs } from "./components/ListOfGifs";
 import { Link, Route } from "wouter";
+import { SearchResults } from './pages/SearchResults';
 import { Home } from "./pages/Home";
 import { Detail } from "./pages/Detail";
 import Logo from "./logo.png";
@@ -14,7 +14,7 @@ function App() {
         </Link>
 
         <Route component={Home} path="/" />
-        <Route component={ListsOfGifs} path="/search/:keyword" />
+        <Route component={SearchResults} path="/search/:keyword" />
         <Route component={Detail} path="/gif/:id" />
       </section>
     </div>
