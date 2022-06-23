@@ -15,6 +15,7 @@ li {
 .title {
   font-size: 50px;
   font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
 }
 
 .enlaces {
@@ -42,6 +43,7 @@ li {
 .App-link {
   color: #61dafb;
 }
+
 
 a {
   color: #09f;

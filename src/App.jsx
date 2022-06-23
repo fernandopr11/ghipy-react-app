@@ -1,9 +1,8 @@
 import "./App.css";
 import { Link, Route } from "wouter";
-import { SearchResults } from './pages/SearchResults';
+import {SearchResults}  from './pages/SearchResults';
 import { Home } from "./pages/Home";
 import { Detail } from "./pages/Detail";
-import Logo from "./logo.png";
 
 function App() {
   return (
